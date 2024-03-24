@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+import daisyui from "daisyui";
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    './node_modules/flowbite/**/*.js'
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -13,10 +15,10 @@ export default {
       lg: "1024px",
       xl: "1280px",
     },
-    daisyui: {
-      themes: ["light"],
-    },
-    extend: {},
   },
-  plugins: [require("daisyui"), require('flowbite/plugin')],
-}
+  daisyui: {
+    themes: ["light"],
+  },
+  plugins: [],
+  plugins: [daisyui],
+};

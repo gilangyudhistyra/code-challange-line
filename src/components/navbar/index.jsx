@@ -12,7 +12,7 @@ export default function Navbar() {
 
                         <div className="flex-1 flex items-center gap-3">
                             <Link href="/">
-                                <div className="w-[80px]">
+                                <div className="w-[80px] bg-white">
                                     <img src='https://static.line-scdn.net/linecorpweb-uit/18dee39ad57/images/logo_h1_v2.png'
                                         width={100}
                                         height={70}
@@ -33,7 +33,7 @@ export default function Navbar() {
                     </div>
 
                     <div>
-                        <select className="select border rounded-full px-10 py-2">
+                        <select className="select border rounded-full px-10 py-2 ">
                             <option className="font-sans">English</option>
                             <option className="font-sans">Indonesia</option>
                             <option className="font-sans">Arabic</option>
@@ -44,10 +44,10 @@ export default function Navbar() {
             {/* /*DEKSTOP*/}
             {/* MOBILE */}
             <div className="lg:hidden">
-                <div className=" flex flex-row justify-center py-5 fixed w-full bg-white z-10">
-                    <div className="flex items-center bg-base-100 px-10 py-2">
+                <div className=" flex flex-row justify-center py-5 fixed w-full z-10">
+                    <div className="flex items-center px-10 py-2">
                         {/* Div Left */}
-                        <div className="flex-1 flex items-center pl-[50px] gap-3">
+                        <div className="flex-1 flex items-center pl-[50px] bg-white gap-3">
                             <Link href="/">
                                 <div className="w-[80px]">
                                     <img src='https://static.line-scdn.net/linecorpweb-uit/18dee39ad57/images/logo_h1_v2.png'
